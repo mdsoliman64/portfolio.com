@@ -1,0 +1,42 @@
+.Home{
+   height:auto;
+   padding:10px;
+
+   margin-top: 50px;
+   transition: 2s ease-in-out;
+}
+.Home img{
+
+    width: 80%;
+    height: auto;
+    text-align: center;
+    
+  
+}
+.Home a{
+    color:#ffff;
+    font-size:1.5rem;
+    margin-right: 10px ;
+    
+}
+.Home button{
+    background-color:var(--Button);
+   
+
+}
+.Home button:hover{
+    background-color: #fff;
+    color:var(--Button);
+   
+}
+.title{
+    animation: zoom 5s ease-in-out infinite;
+}
+@keyframes zoom {
+    from{
+           opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

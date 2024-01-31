@@ -1,0 +1,78 @@
+.counter{
+    width:30px;
+    height: 30px;
+    background-color: #210029;
+    color:blueviolet;
+    border: 2px solid blueviolet;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+ 
+  
+}
+#cert{
+    position: relative;
+    z-index: 1000;
+}
+.counter::before{
+    content: "";
+    border-left: 2px dashed blueviolet;
+    position: absolute;
+    height: 100vh;
+    width: 20px;
+    z-index: -1000;
+    margin-left: 5px;
+    transition: 2s;
+    animation: line 5s ease-in-out ;
+  
+}
+#container{
+display: flex;
+align-items: stretch;
+margin-bottom: 50px;
+}
+.card{
+    margin-left: 25px;
+    width: 400px;
+    height: auto;
+}
+.card h4{
+color:silver;
+font-weight: 800;
+text-shadow: 2px 2px 4px blueviolet;
+font-size: 1.2rem;
+}
+.card p{
+    color: blueviolet;
+}
+.CertContainer::-webkit-scrollbar-thumb{
+ background-color: blueviolet;
+}
+.CertContainer::-webkit-scrollbar{
+    background-color: #210029;
+}
+.certFluid{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 900px;
+    border: 2px solid blueviolet;
+    
+}
+.certFluid img{
+    width: 400px;
+  
+}
+
+#NewCerticate h2{
+    font-weight: 800;
+    color: silver;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@keyframes line {
+    from{ height: 0vh;}
+    to{ height: 100vh;}
+    
+}

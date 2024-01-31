@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@200;300;400;500;600;700;800&family=Montserrat:wght@200;600;900&family=Syne:wght@400;500;600;700&family=Ubuntu+Mono&display=swap');
+:root{
+  --Button: #5A0E70;
+  --Border:#FF66C4;
 }
+body{
+  padding:0;
+  margin:0;
+  /* background-image:linear-gradient(180deg,#0F1637,#270F1E ); */
+  background-image: url("/src/Assets/Images/bg.png");
+  background-attachment: fixed;
+  background-size:cover;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+  background-repeat: no-repeat;
 }

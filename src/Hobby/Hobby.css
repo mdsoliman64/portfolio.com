@@ -1,0 +1,15 @@
+.Hobby{
+
+    padding: 20px;
+    margin-bottom: 50px;
+    transition: all 4s ease-out;
+    transition-delay: 4s;
+}
+.Hobby img{
+    width: 100px;
+    height: auto;
+    text-align: center;
+}
+.Hobby h3,.Hobby h5{
+    text-align: center;
+}

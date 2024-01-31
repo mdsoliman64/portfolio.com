@@ -1,0 +1,95 @@
+#Portfolio{
+margin-Top:20%;
+margin-bottom: 20%;
+padding-top: 50px;
+transition: 2s ease-in-out;
+}
+
+.Portfolio-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    flex-grow: 1;
+    transition: 2s ease-in-out;
+
+}
+
+.Portfolio-title{
+    background-color: #5A0E70;
+    color: #fff;
+    padding:80px;
+    width:15px;
+}
+.Portfolio-title-mb{
+    background-color: #5A0E70;
+    color: #fff;
+    padding:20px;
+    width:100%;
+
+}
+.Portfolio-title-mb  h1{
+    font-family: "Montserrat";
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    padding: 5px;
+    text-align: center;
+      
+}
+.Portfolio-title h1{
+    font-family: "Montserrat";
+    transform-origin:2.5em 3.2em ;
+   
+    transform: rotate(-90deg);
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    padding: 25px;
+      
+}
+.Portfolio-item a{
+    color:var(--Button);
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: "Syne";
+
+}
+.Portfolio-item {
+    overflow:hidden ;
+width: 77%;
+    padding: 25px;
+    background-color: aliceblue;
+   height: auto;
+
+}
+.Portfolio-item-mb{
+    overflow:hidden ;
+    padding: 15px;
+    background-color: aliceblue;
+    height: auto;
+    width: 100%;
+}
+
+.Portfolio-item-mb a{
+    color:var(--Button);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Syne";
+}
+.Portfolio-wrap ::-webkit-scrollbar{
+
+    background: #979790; 
+    border-radius: 25px;
+   
+}
+.Portfolio-wrap ::-webkit-scrollbar-thumb{
+    background: var(--Button); 
+    border-radius: 25px;
+}
+.carousel-wrapper{
+    background-color: #5A0E70;
+    width: 100%;
+}
+.carousel-wrapper h2{
+    color: #5A0E70;
+}
+

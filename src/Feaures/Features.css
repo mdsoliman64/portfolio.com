@@ -1,0 +1,80 @@
+#Features{
+    min-height: 200px ;
+    overflow: hidden;
+    padding: 10px;
+  
+    
+}
+#Features h1{
+    animation: textANimation 5s ease-in-out infinite;
+    font-family: "Montserrat";
+    font-size: 5.8rem;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px  var(--Button);
+  
+    transition: 2s ease-in-out;
+ 
+   
+}
+
+@keyframes textANimation{
+    0%,10%{
+transform: translateY(-2000px);
+opacity: 0.5;
+    }
+   10%,50%{
+    transform: translateY(10px);
+opacity: 1;
+text-shadow: 1px 5px 20px var(--Border);
+-webkit-text-stroke: 2px  var(--Border);
+
+
+   }
+   51%,80%{
+    transform: translateY(100px);
+opacity: 1;
+   }
+}
+/* xxxxxxxxxxx responsive xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media screen and (max-width: 700px) {
+    #Features{
+        min-height: 100px ;
+        overflow: hidden;
+        padding: 10px;
+      
+        
+    }
+
+    #Features h1{
+        animation: textANimation 5s ease-in-out infinite;
+        font-family: "Montserrat";
+        font-size: 2rem;
+        font-weight: 900;
+        color: transparent;
+        -webkit-text-stroke: 2px  var(--Button);
+    
+        transition: 2s ease-in-out;
+       
+    }
+
+    @keyframes textANimation{
+        0%,10%{
+    transform: translateY(-2000px);
+    opacity: 0.5;
+        }
+       10%,50%{
+        transform: translateY(10px);
+    opacity: 1;
+    text-shadow: 1px 3px 10px var(--Border);
+    -webkit-text-stroke: 2px  var(--Border);
+    
+    
+       }
+       51%,80%{
+        transform: translateY(100px);
+    opacity: 1;
+       }
+    }
+
+}
