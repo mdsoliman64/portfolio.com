@@ -8,8 +8,12 @@ import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import "../compnents/Navbar.css";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
+import { useParams } from 'react-router-dom';
+
 
 function Navbar() {
+  let {id} = useParams();
+  console.log({id});
   const driverObj = driver({
     showProgress: true,
     popoverClass: 'driverjs-theme',
@@ -23,6 +27,7 @@ function Navbar() {
       { element: '#contactIcon', popover: { title: 'Contact', description: 'Click this icon to talk me.' } },
     ]
   });
+  
   driverObj.drive();
 
 
@@ -54,8 +59,8 @@ function Navbar() {
 
 
          <a href="/services">
-          <div className="icon">
-            <RocketLaunchIcon className="rocket-icon" sx={{fontSize:35}} id="servicesIcon"/>
+          <div className="icon" id="servicesIcon">
+            <RocketLaunchIcon className="rocket-icon" sx={{fontSize:35}} />
           </div>
          </a>
 

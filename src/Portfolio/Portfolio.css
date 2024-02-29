@@ -18,8 +18,8 @@ transition: 2s ease-in-out;
 .Portfolio-title{
     background-color: #5A0E70;
     color: #fff;
-    padding:80px;
-    width:15px;
+    padding:70px;
+    width:45px;
 }
 .Portfolio-title-mb{
     background-color: #5A0E70;
@@ -38,12 +38,13 @@ transition: 2s ease-in-out;
 }
 .Portfolio-title h1{
     font-family: "Montserrat";
-    transform-origin:2.5em 3.2em ;
+    transform-origin:2.5em 3.2em ; 
    
-    transform: rotate(-90deg);
+     transform: rotate(-90deg); 
+    
     font-size: 3.5rem;
-    letter-spacing: 3px;
-    padding: 25px;
+     letter-spacing: 3px; 
+    padding: 25px; 
       
 }
 .Portfolio-item a{

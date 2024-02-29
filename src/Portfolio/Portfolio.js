@@ -19,7 +19,7 @@ setMbDevice(false);
    <section id="Portfolio">
       <div className='Portfolio-wrap'>
       <div className={mbdevice ?"Portfolio-title-mb":"Portfolio-title"}>
-         <h1>Portfolio</h1>
+         <h1>Portfolio </h1>
         </div>
         <div className={mbdevice ?'Portfolio-item-mb':"Portfolio-item"}>
           

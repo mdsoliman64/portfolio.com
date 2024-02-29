@@ -47,8 +47,10 @@ function prevHandle(){
             <div className="CP-button-container" style={{opacity:`${props.mbdevice ? 0:1 }`}}>
                       
                         <button onClick={prevHandle}><ArrowLeftIcon sx={{fontSize:"2rem"}}/>  </button>
+                        
                         <button onClick={nextHandle}><ArrowRightIcon sx={{fontSize:"2rem"}} /></button>
             </div>
+            <span> {Products.length}</span>
             </>
     )
 }

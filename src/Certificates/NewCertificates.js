@@ -7,16 +7,17 @@ function NewCertificates() {
 
  function handleClick(e){
 const value= e.target.value;
-navigator.clipboard.writeText(value)
+navigator.clipboard.writeText(value);
+alert("copied: "+ value)
  }   
   return (
     <div id="NewCerticate">
 <Typography component="h2" variant='h2'> My Certificates</Typography>
-<Paper className="certFluid" elevation={4} sx={{backgroundColor:"#210029",padding:"20px",marginBottom:"50px",width:"100%",}}>
+<Paper className="certFluid" elevation={4} sx={{backgroundColor:"#210029",padding:"20px",margin:"auto",marginBottom:"50px",width:"100%",}}>
    
     <img src={ProgrammingImage} alt="programmer"/>
 
-        <Paper className="CertContainer"  sx={{backgroundColor:"#210029",padding:"20px", height:"300px",overflowY:"scroll",marginBottom:"50px",width:"450px"}}>
+        <Paper className="CertContainer"  sx={{backgroundColor:"#210029",padding:"20px", height:"300px",overflowY:"scroll",margin:"auto",marginBottom:"50px",width:"450px"}}>
                <div id="cert">
                {CertificatePost.map((item,index)=>{
                 return (
