@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import PersonIcon from '@mui/icons-material/Person';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -29,13 +29,23 @@ function Navbar(props) {
   });
   
 
- if(window.innerWidth <700){
-  console.log("this is small device");
- }else{
-  driverObj.drive();
- } 
+ 
+
+useEffect(()=>{
 
 
+  if(!localStorage.getItem('isRun')){
+    if(window.innerWidth <700){
+      console.log("this is small device");
+     }else{
+      driverObj.drive();
+     } 
+  
+     localStorage.setItem('isRun', 'true');
+  }
+  
+
+},[])
 
 
 
