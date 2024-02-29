@@ -11,11 +11,11 @@ import "driver.js/dist/driver.css";
 import { useParams } from 'react-router-dom';
 
 
-function Navbar() {
+function Navbar(props) {
   let {id} = useParams();
   console.log({id});
   const driverObj = driver({
-    showProgress: true,
+    showProgress: false,
     popoverClass: 'driverjs-theme',
     showButtons: ['next', 'previous', 'close'],
     steps: [
@@ -28,7 +28,12 @@ function Navbar() {
     ]
   });
   
+
+ if(window.innerWidth <700){
+  console.log("this is small device");
+ }else{
   driverObj.drive();
+ } 
 
 
 

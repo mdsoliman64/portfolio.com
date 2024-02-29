@@ -80,7 +80,7 @@ return()=>{
        
       </Grid>
       <Grid item xs={smdevice ?0 :2} sx={{position:"fixed",textAlign:"right",marginLeft:`${smdevice?"75%":"82%"}`,zIndex:10}} >
-       {smdevice ? (<MobileMenue />) :(<Navbar/>)}
+       {smdevice ? (<MobileMenue />) :(<Navbar device={smdevice}/>)}
         
       </Grid>
     </Grid>
